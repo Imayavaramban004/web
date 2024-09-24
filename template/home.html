@@ -1,0 +1,11 @@
+{%extends 'base.html' %}
+{%block content%}
+<h1>IMaya loves {{name}}</h1>
+<form action="add" method="post">
+    {%csrf_token%}
+
+    Enter the number:<input type="text" name="input1",placeholder="enter the no."><br>
+    Enter the number:<input type="text" name="input2",placeholder="enter the no."><br>
+    <input type="submit",placeholder='ADD'>
+</form>
+{%endblock%}
